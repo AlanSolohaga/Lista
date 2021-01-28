@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <TextView
+            android:id="@+id/textPrueba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnListaNueva"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="LISTA NUEVA"
+                android:onClick="onClick"
+                />
+            <Button
+                android:id="@+id/btnVerListas"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="VER LISTAS"
+                android:onClick="onClick"
+                />
+            <Button
+                android:id="@+id/btnEnviarLista"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="ENVIAR LISTA"
+                android:onClick="onClick"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:background="#9C27B0"
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+        </TextView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerListaMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:background="#E3E0E0"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

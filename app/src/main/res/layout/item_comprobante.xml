@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView android:id="@+id/textNombreElemento"
+                android:text="NOMBRE ELEMTENTO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@android:dimen/app_icon_size">
+            </TextView>
+
+            <TextView
+                android:gravity="right"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:text="U:"></TextView>
+
+            <EditText
+                android:id="@+id/editCantidadElemento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="cant"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:text="$"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+            </TextView>
+
+            <EditText android:id="@+id/editPrecioElemento"
+                android:hint="precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </EditText>
+
+            <TextView android:text="Sub. Total:"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+            </TextView>
+
+            <TextView android:id="@+id/textSubTotal"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="SUBTOTAL"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:background="#9C27B0"
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+        </TextView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
